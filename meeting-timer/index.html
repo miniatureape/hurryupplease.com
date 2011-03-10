@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/mootools.js"></script>
+        <script src="js/meetingtimer.js"></script>
+        <!--[if lt IE 9]>
+            <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <title>Meeting Timer</title>
+    </head>
+    <body>
+        <img src="imgs/gradient-mini.png" id="background" alt="background"/>
+        <div id="container">
+            <h1>Hurry Up Please</h1>
+            <form id="form">    
+                <ul>
+                    <li>
+                        <input type="text" id="num-people" name="num-people" value="4"/>
+                        <label>PEOPLE</label>
+                    </li>
+                    <li>
+                        <input type="text" id="avg-billable" name="avg-billable" value="$200" />
+                        <label>AVG BILLABLE / HR</label>
+                    </li>
+                </ul>
+            </form>
+            <div id="display">
+                <div id="spent">
+                    <p id="start">START</p>
+                    <p id="amt-spent"><span id="currency">$</span><span id="value">0.00</span></p>
+                    <ul id="ctrls">
+                        <li><span class="button" id="resume">Resume</span></li>
+                        <li><span class="button" id="reset">Reset</span></li>
+                    </ul>
+                </div>
+                <p id="elapsed"><span id="hours">0</span>hr <span id="minutes">0</span>min</p>
+            </div>
+        </div>
+        <a id="info"href="http://justindonato.com">About</a>
+        
+        <script type="text/javascript">
+          var _gaq = _gaq || [];
+          _gaq.push(['_setAccount', 'UA-21951726-1']);
+          _gaq.push(['_trackPageview']);
+
+          (function() {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+          })();
+
+        </script>
+    </body>
+</html>
