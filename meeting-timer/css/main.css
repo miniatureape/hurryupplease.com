@@ -107,14 +107,16 @@ label{
 }
 
 .button{
-    background-image: -webkit-linear-gradient(#e22092, #c00070);
-    background-image: -moz-linear-gradient(#e22092, #c00070);
     display: inline-block;
     padding: 5px 10px 6px;
     color: #fff;
     text-decoration: none;
     -moz-border-radius: 6px;
     -webkit-border-radius: 6px;
+    background-image: -webkit-linear-gradient(#e22092, #c00070);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e22092), color-stop(100%, #c00070));
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e22092', endColorstr='#c00070', GradientType=0 );
+    background-image: -moz-linear-gradient(#e22092, #c00070);
     -moz-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
     -webkit-box-shadow: 0 1px 3px rgba(0,0,0,0.6);
     text-shadow: 0 -1px 1px rgba(0,0,0,0.25);
